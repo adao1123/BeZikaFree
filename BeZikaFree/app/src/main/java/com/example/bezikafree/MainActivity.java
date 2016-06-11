@@ -60,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
         initializeFragments();
         setUpDrawerContent(navigationView);
         initFragmentManager();
-        openScreen();
+
+        if(savedInstanceState == null) { openScreen(); }
     }
 
     private void initFragmentManager(){
