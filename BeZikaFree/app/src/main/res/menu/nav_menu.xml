@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_overview_id"
+            android:icon="@drawable/icon_jobpost"
+            android:title="Overview"/>
+        <item
+            android:id="@+id/drawer_transmission_id"
+            android:icon="@drawable/icon_scholarship"
+            android:title="Transmission"/>
+        <item
+            android:id="@+id/drawer_symptoms_id"
+            android:icon="@drawable/icon_transportation"
+            android:title="Symptoms"/>
+        <item
+            android:id="@+id/drawer_effects_id"
+            android:icon="@drawable/icon_requirements"
+            android:title="Effects"/>
+        <item android:title="prevention">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/drawer_prevention_bites_id"
+                        android:icon="@drawable/icon_successhappy"
+                        android:title="Prevent Bites"/>
+                    <item
+                        android:id="@+id/drawer_prevention_control_id"
+                        android:icon="@drawable/icon_about"
+                        android:title="Control/Limit Mosquito"/>
+                    <item
+                        android:id="@+id/drawer_prevention_safesex_id"
+                        android:icon="@drawable/icon_about"
+                        android:title="Safe Sex"/>
+                    <item
+                        android:id="@+id/drawer_prevention_travel_id"
+                        android:icon="@drawable/icon_about"
+                        android:title="Travel"/>
+                </group>
+            </menu>
+        </item>
+        <item android:title="Treatment">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/drawer_treatment_cure_id"
+                        android:icon="@drawable/icon_application"
+                        android:title="Cure/Treatment Symptoms"/>
+                    <item
+                        android:id="@+id/drawer_doctor_id"
+                        android:icon="@drawable/icon_interview"
+                        android:title="Get Tested"/>
+                </group>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/drawer_other_id"
+            android:icon="@drawable/icon_resume"
+            android:title="Other Resources"/>
+    </group>
+</menu>
