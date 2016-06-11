@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import com.example.bezikafree.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -27,16 +29,17 @@ import java.util.Locale;
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private MapView mapView;
     private SupportMapFragment mapFragment;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.frag_maps,container,false);
-
-        mapFragment = (SupportMapFragment) getFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        View v = inflater.inflate(R.layout.frag_map,container,false);
+        initGoogleMaps(v,savedInstanceState);
+//        mapFragment = (SupportMapFragment) getFragmentManager()
+//                .findFragmentById(R.id.map);
+//        mapFragment.getMapAsync(this);
 
         return v;
     }
@@ -75,4 +78,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         }
         return "N/A No Address Found at these coordinates";
     }
+
+    private void initGoogleMaps(View view, Bundle savedInstanceState){
+        mapView = (MapView) view.findViewById(R.id.input_fragment_mapView);
+        mapView.onCreate(savedInstanceState);
+        mapView.onResume();// needed to get the map to display immediately
+        mMap = mapView.getMap();
+        try {
+            MapsInitializer.initialize(getActivity().getApplicationContext());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }
