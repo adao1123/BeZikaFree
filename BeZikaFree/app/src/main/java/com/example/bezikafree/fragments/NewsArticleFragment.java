@@ -85,14 +85,12 @@ public class NewsArticleFragment extends Fragment {
             super.onPageFinished(view, url);
             articleWebView.loadUrl("javascript:window.HTMLOUT.showHTML('<head>'+document.getElementsByTagName('html')[0].innerHTML+'</head>');");
             progress.setVisibility(View.GONE);
-            saveLater.setVisible(true);
         }
 
         @Override
         public void onPageStarted(WebView view, String url, Bitmap favicon) {
             super.onPageStarted(view, url, favicon);
             progress.setVisibility(View.VISIBLE);
-            saveLater.setVisible(false);
         }
     }
 

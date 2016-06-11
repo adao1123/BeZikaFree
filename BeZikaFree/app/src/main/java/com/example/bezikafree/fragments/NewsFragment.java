@@ -113,6 +113,7 @@ public class NewsFragment extends Fragment{
 
                 if (recyclerView != null) {
                     recyclerView.setAdapter(zikaSearchAdapter);
+                    progress.setVisibility(View.GONE);
                 }
             }
 
