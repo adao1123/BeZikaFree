@@ -16,7 +16,7 @@ public class OtherFragment extends android.support.v4.app.Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.frag_treatment_cure,container,false);
+        View v = inflater.inflate(R.layout.frag_other,container,false);
         return v;
     }
 
