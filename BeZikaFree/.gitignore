@@ -11,3 +11,4 @@ gradle.properties
 /.idea
 .idea/misc.xml
 app/src/main/java/com/example/bezikafree/keys/keys.java
+

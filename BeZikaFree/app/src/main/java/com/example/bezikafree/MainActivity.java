@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openScreen(){
-        fragmentTransaction.replace(R.id.fragment_container_id,newsFragment);
+        fragmentTransaction.replace(R.id.fragment_container_id,mapFragment);
         fragmentTransaction.commit();
     }
 

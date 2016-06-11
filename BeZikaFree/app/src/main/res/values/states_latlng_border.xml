@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <integer-array name="incidents">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>2</item>
+        <item>44</item>
+        <item>2</item>
+        <item>1</item>
+        <item>3</item>
+        <item>132</item>
+        <item>17</item>
+        <item>10</item>
+        <item>0</item>
+        <item>16</item>
+        <item>7</item>
+        <item>7</item>
+        <item>2</item>
+        <item>6</item>
+        <item>4</item>
+        <item>6</item>
+        <item>21</item>
+        <item>20</item>
+        <item>7</item>
+        <item>17</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>6</item>
+        <item>4</item>
+        <item>17</item>
+        <item>3</item>
+        <item>164</item>
+        <item>11</item>
+        <item>0</item>
+        <item>14</item>
+        <item>5</item>
+        <item>6</item>
+        <item>23</item>
+        <item>4</item>
+        <item>1</item>
+        <item>0</item>
+        <item>4</item>
+        <item>40</item>
+        <item>2</item>
+        <item>1</item>
+        <item>20</item>
+        <item>6</item>
+        <item>4</item>
+        <item>2</item>
+        <item>0</item>
+    </integer-array>
     <array name="USStates">
         <item>@array/Alaska</item>
         <item>@array/Arizona</item>

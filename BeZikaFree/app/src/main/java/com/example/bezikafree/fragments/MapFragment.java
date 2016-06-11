@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 
 import com.example.bezikafree.Coordinate;
 import com.example.bezikafree.R;
+import com.example.bezikafree.State;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -114,30 +115,30 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     public void plotMarkers(double latitude, double longitude){
         // create marker
-        MarkerOptions marker = new MarkerOptions().position(
-                new LatLng(latitude, longitude))
-                .title(getAddressName(latitude,longitude))
-                .snippet("OUTBREAK STUFF TEST STUFF");
-        // Changing marker icon
-        marker.icon(BitmapDescriptorFactory
-                .defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
-        mMap.addMarker(marker);
+//        MarkerOptions marker = new MarkerOptions().position(
+//                new LatLng(latitude, longitude))
+//                .title(getAddressName(latitude,longitude))
+//                .snippet("OUTBREAK STUFF TEST STUFF");
+//        // Changing marker icon
+//        marker.icon(BitmapDescriptorFactory
+//                .defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
+//        mMap.addMarker(marker);
         CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(latitude, longitude)).zoom(2).build();
+                .target(new LatLng(latitude, longitude)).zoom(3).build();
         mMap.animateCamera(CameraUpdateFactory
                 .newCameraPosition(cameraPosition));
     }
 
 
-    public void drawPolygon(String[] stateCoor){
+    public void drawPolygon(State state){
 // Instantiates a new Polygon object and adds points to define a rectangle
         PolygonOptions rectOptions = new PolygonOptions();
-        ArrayList<Coordinate> coorList = drawStates(stateCoor);
+        ArrayList<Coordinate> coorList = drawStates(state.getCoordinates());
         for (Coordinate coor : coorList){
             rectOptions.add(new LatLng(coor.getLatitude(),coor.getLongitude()));
 
         }
-        rectOptions.strokeColor(Color.BLACK).fillColor(Color.RED).strokeWidth(3);
+        rectOptions.strokeColor(Color.BLACK).fillColor(Color.parseColor(state.getColor())).strokeWidth(3);
 
 
 // Get back the mutable Polygon
@@ -165,7 +166,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             int id = ta.getResourceId(i, 0);
             if (id > 0) {
                 array[i] = res.getStringArray(id);
-                drawPolygon(array[i]);
+                State state = new State(res.getIntArray(R.array.incidents)[i],"",array[i]);
+                drawPolygon(state);
 
             } else {
                 // something wrong with the XML
