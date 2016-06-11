@@ -100,7 +100,7 @@ public class NewsFragment extends Fragment{
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         articleSearchResponse = retrofit.create(SearchAPI.class);
-        Call<ZikaArticleSearch> call = articleSearchResponse.listArticleSearchDocs("zika");
+        Call<ZikaArticleSearch> call = articleSearchResponse.listArticleSearchDocs("Zika");
         call.enqueue(new Callback<ZikaArticleSearch>() {
             @Override
             public void onResponse(Call<ZikaArticleSearch> call, Response<ZikaArticleSearch> response) {
