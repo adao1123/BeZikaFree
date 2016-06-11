@@ -5,7 +5,6 @@
     android:layout_height="match_parent">
 
     <ProgressBar
-        android:layout_marginTop="50dp"
         android:id="@+id/news_progress_bar_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

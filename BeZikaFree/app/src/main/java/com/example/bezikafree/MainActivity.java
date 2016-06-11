@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     DrawerLayout drawerLayout;
     TextView titleTV;
-
     Toolbar toolbar;
 
 
@@ -56,15 +55,13 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawerlayout_id);
         titleTV = (TextView)findViewById(R.id.title_text_id);
         navigationView = (NavigationView)findViewById(R.id.nvView_id);
-
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         initializeFragments();
         setUpDrawerContent(navigationView);
         initFragmentManager();
-        openScreen();
+
+        if(savedInstanceState == null) { openScreen(); }
     }
 
     private void initFragmentManager(){
@@ -74,7 +71,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void openScreen(){
         fragmentTransaction.replace(R.id.fragment_container_id,newsFragment);
-        titleTV.setText("Zika News");
         fragmentTransaction.commit();
     }
 
@@ -110,61 +106,61 @@ public class MainActivity extends AppCompatActivity {
         switch (menuItem.getItemId()){
             case R.id.drawer_map_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, mapFragment);
-                titleTV.setText("Zika Outbreak Map");
+                //titleTV.setText("Zika Outbreak Map");
                 break;
             case R.id.drawer_news_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, newsFragment);
-                titleTV.setText("Recent News");
+                //titleTV.setText("Recent News");
                 break;
             case R.id.drawer_overview_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, overviewFragment);
-                titleTV.setText("Overview");
+                //titleTV.setText("Overview");
                 break;
             case R.id.drawer_transmission_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, transmissionFragment);
-                titleTV.setText("Transmission");
+                //titleTV.setText("Transmission");
                 break;
             case R.id.drawer_symptoms_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, symptomsFragment);
-                titleTV.setText("Symptoms");
+                //titleTV.setText("Symptoms");
                 break;
             case R.id.drawer_effects_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, effectsFragment);
-                titleTV.setText("Effects");
+                //titleTV.setText("Effects");
                 break;
             case R.id.drawer_prevention_bites_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, preventBitesFragment);
-                titleTV.setText("Prevent Bites");
+                //titleTV.setText("Prevent Bites");
                 break;
             case R.id.drawer_prevention_control_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, preventionControlFragment);
-                titleTV.setText("Control/Limit Mosquitos");
+                //titleTV.setText("Control/Limit Mosquitos");
                 break;
             case R.id.drawer_prevention_safesex_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, preventionSafeSexFragment);
-                titleTV.setText("Safe Sex");
+                //titleTV.setText("Safe Sex");
                 break;
             case R.id.drawer_prevention_travel_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, preventionTravelFragment);
-                titleTV.setText("Travel Safely");
+                //titleTV.setText("Travel Safely");
                 break;
             case R.id.drawer_treatment_cure_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, treatmentCureFragment);
-                titleTV.setText("Cure/Treat Symptoms");
+                //titleTV.setText("Cure/Treat Symptoms");
                 break;
             case R.id.drawer_doctor_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, treatmentDoctorFragment);
-                titleTV.setText("Get Tested");
+                //titleTV.setText("Get Tested");
                 break;
             case R.id.drawer_other_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, otherFragment);
-                titleTV.setText("Other");
+                //titleTV.setText("Other");
                 break;
             default: break;
         }
         fragmentTransaction.commit();
         menuItem.setChecked(true);
-        //setTitle(menuItem.getTitle());
+        toolbar.setTitle(menuItem.getTitle());
         drawerLayout.closeDrawers();
     }
 

@@ -34,7 +34,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/transmission_mosquito_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -70,7 +70,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/transmission_mother_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -106,7 +106,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/transmission_transfusion_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -141,7 +141,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/transmission_sex_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -179,7 +179,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/transmission_father_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>

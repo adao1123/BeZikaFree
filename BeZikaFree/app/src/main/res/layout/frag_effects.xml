@@ -34,7 +34,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:text="@string/effects_risks_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -70,7 +70,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:text="@string/effects_breastfeeding_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -106,7 +106,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:text="@string/effects_pregnancy_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -141,7 +141,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:text="@string/effects_pregnancy2_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -179,7 +179,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="20sp"
                     android:text="@string/effects_microcephaly_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>

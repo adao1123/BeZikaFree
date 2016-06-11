@@ -3,19 +3,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/drawer_map_id"
-            android:icon="@drawable/icon_jobpost"
+            android:icon="@drawable/earth"
             android:title="Zika Outbreak Map"/>
         <item
             android:id="@+id/drawer_news_id"
-            android:icon="@drawable/icon_jobpost"
+            android:icon="@drawable/newspaper_icon"
             android:title="Zika Recent News"/>
         <item
             android:id="@+id/drawer_overview_id"
-            android:icon="@drawable/icon_jobpost"
+            android:icon="@drawable/icon_application"
             android:title="Overview"/>
         <item
             android:id="@+id/drawer_transmission_id"
-            android:icon="@drawable/icon_scholarship"
+            android:icon="@drawable/transfusion"
             android:title="Transmission"/>
         <item
             android:id="@+id/drawer_symptoms_id"
@@ -42,7 +42,7 @@
                         android:title="Safe Sex"/>
                     <item
                         android:id="@+id/drawer_prevention_travel_id"
-                        android:icon="@drawable/icon_about"
+                        android:icon="@drawable/air_transport"
                         android:title="Travel"/>
                 </group>
             </menu>
@@ -56,7 +56,7 @@
                         android:title="Cure/Treatment Symptoms"/>
                     <item
                         android:id="@+id/drawer_doctor_id"
-                        android:icon="@drawable/icon_interview"
+                        android:icon="@drawable/test_tubes"
                         android:title="Get Tested"/>
                 </group>
             </menu>
@@ -64,6 +64,6 @@
         <item
             android:id="@+id/drawer_other_id"
             android:icon="@drawable/icon_resume"
-            android:title="Other Resources"/>
+            android:title="Contact Info"/>
     </group>
 </menu>
