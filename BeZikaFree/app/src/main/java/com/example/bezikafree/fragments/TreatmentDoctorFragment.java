@@ -12,7 +12,7 @@ import com.example.bezikafree.R;
 /**
  * Created by adao1 on 6/10/2016.
  */
-public class TreatmentDoctorFragment extends Fragment {
+public class TreatmentDoctorFragment extends android.support.v4.app.Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

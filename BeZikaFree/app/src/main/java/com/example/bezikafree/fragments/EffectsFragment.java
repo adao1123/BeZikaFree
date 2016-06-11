@@ -12,7 +12,7 @@ import com.example.bezikafree.R;
 /**
  * Created by adao1 on 6/10/2016.
  */
-public class EffectsFragment extends Fragment {
+public class EffectsFragment extends android.support.v4.app.Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
