@@ -34,8 +34,9 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@android:color/white"
+        app:itemBackground="@drawable/activated_background"
         app:menu="@menu/nav_menu"
-        app:itemIconTint="@color/colorPrimary"
-        app:itemTextColor="@color/colorPrimary">
+        app:itemIconTint="@drawable/activated_item"
+        app:itemTextColor="@drawable/activated_item">
     </android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>
