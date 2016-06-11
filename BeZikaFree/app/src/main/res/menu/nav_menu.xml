@@ -4,7 +4,7 @@
         <item
             android:id="@+id/drawer_map_id"
             android:icon="@drawable/earth"
-            android:title="Zika Outbreak Map"/>
+            android:title="Zika US Outbreak Map"/>
         <item
             android:id="@+id/drawer_news_id"
             android:icon="@drawable/newspaper_icon"

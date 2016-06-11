@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void openScreen(){
         fragmentTransaction.replace(R.id.fragment_container_id, mapFragment);
-        toolbar.setTitle("Zika Outbreak Map");
+        toolbar.setTitle("Zika US Outbreak Map");
         fragmentTransaction.commit();
     }
 
