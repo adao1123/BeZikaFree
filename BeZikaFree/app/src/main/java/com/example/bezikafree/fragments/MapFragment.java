@@ -1,5 +1,7 @@
 package com.example.bezikafree.fragments;
 
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -15,13 +17,17 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Locale;
+
 /**
  * Created by Billy on 6/11/16.
  */
 public class MapFragment extends Fragment implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    SupportMapFragment mapFragment;
+    private SupportMapFragment mapFragment;
 
     @Nullable
     @Override
@@ -50,8 +56,23 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        String addressName = getAddressName(-34,151);
+        LatLng addressLatLng = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(addressLatLng).title(addressName));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(addressLatLng));
+    }
+
+    private String getAddressName(double lat,double lon){
+        Geocoder geocoder = new Geocoder(getActivity().getApplicationContext(), Locale.getDefault());
+        try {
+            List<Address> listAddresses = geocoder.getFromLocation(lat, lon, 1);
+            if(null!=listAddresses&&listAddresses.size()>0){
+                String location = listAddresses.get(0).getAddressLine(0);
+                return location;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "N/A No Address Found at these coordinates";
     }
 }
