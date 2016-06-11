@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     TextView titleTV;
     Toolbar toolbar;
-    private DrawerLayout drawer;
 
 
 

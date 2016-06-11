@@ -104,7 +104,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             e.printStackTrace();
         }
 
-
         plotMarkers(37.484419, -122.203787);
         drawAmerica();
 
