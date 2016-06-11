@@ -26,15 +26,15 @@
                         android:title="Prevent Bites"/>
                     <item
                         android:id="@+id/drawer_prevention_control_id"
-                        android:icon=""
+                        android:icon="@drawable/icon_about"
                         android:title="Control/Limit Mosquito"/>
                     <item
                         android:id="@+id/drawer_prevention_safesex_id"
-                        android:icon=""
+                        android:icon="@drawable/icon_about"
                         android:title="Safe Sex"/>
                     <item
                         android:id="@+id/drawer_prevention_travel_id"
-                        android:icon=""
+                        android:icon="@drawable/icon_about"
                         android:title="Travel"/>
                 </group>
             </menu>
