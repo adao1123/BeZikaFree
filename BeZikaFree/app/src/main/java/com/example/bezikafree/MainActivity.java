@@ -4,7 +4,9 @@ import android.animation.PropertyValuesHolder;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -46,6 +48,8 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     TextView titleTV;
     Toolbar toolbar;
+    private DrawerLayout drawer;
+
 
 
     @Override
@@ -56,10 +60,15 @@ public class MainActivity extends AppCompatActivity {
         titleTV = (TextView)findViewById(R.id.title_text_id);
         navigationView = (NavigationView)findViewById(R.id.nvView_id);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(" ");
         setSupportActionBar(toolbar);
+
         initializeFragments();
         setUpDrawerContent(navigationView);
         initFragmentManager();
+
+        setActionBarDrawer();
+
 
         if(savedInstanceState == null) { openScreen(); }
     }
@@ -70,7 +79,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openScreen(){
-        fragmentTransaction.replace(R.id.fragment_container_id,newsFragment);
+        fragmentTransaction.replace(R.id.fragment_container_id, mapFragment);
+        toolbar.setTitle("Zika Outbreak Map");
         fragmentTransaction.commit();
     }
 
@@ -162,6 +172,24 @@ public class MainActivity extends AppCompatActivity {
         menuItem.setChecked(true);
         toolbar.setTitle(menuItem.getTitle());
         drawerLayout.closeDrawers();
+    }
+
+
+    private void setActionBarDrawer() {
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.setDrawerListener(toggle);
+        toggle.syncState();
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawerlayout_id);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
 }

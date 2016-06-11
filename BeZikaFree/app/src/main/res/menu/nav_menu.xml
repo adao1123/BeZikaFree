@@ -52,7 +52,7 @@
                 <group android:checkableBehavior="single">
                     <item
                         android:id="@+id/drawer_treatment_cure_id"
-                        android:icon="@drawable/icon_application"
+                        android:icon="@drawable/medic_icon"
                         android:title="Cure/Treatment Symptoms"/>
                     <item
                         android:id="@+id/drawer_doctor_id"

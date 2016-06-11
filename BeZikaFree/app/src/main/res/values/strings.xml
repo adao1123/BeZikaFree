@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Be Zika Free</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
     <string name="symptoms_title">What are the symptoms of Zika?</string>
     <string name="symptoms_text">The Zika virus commonly causes a mild flu-like illness that might include fever, headache, joint and or muscle pain, conjunctivitis (“pink eye”) and sometimes a body rash.\n\n
         Most people infected with Zika virus won’t have symptoms. For this reason, many people might not realize they have been infected. It is estimated that only one out of five infected people will have symptoms. The most common symptoms of Zika are fever, rash, joint pain, or conjunctivitis (red eyes). Other common symptoms include muscle pain and headache.\n\n
