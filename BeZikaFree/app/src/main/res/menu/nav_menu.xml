@@ -17,7 +17,7 @@
             android:id="@+id/drawer_effects_id"
             android:icon="@drawable/icon_requirements"
             android:title="Effects"/>
-        <item android:title="prevention">
+        <item android:title="Prevention">
             <menu>
                 <group android:checkableBehavior="single">
                     <item
