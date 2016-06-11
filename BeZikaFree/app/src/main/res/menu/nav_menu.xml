@@ -15,26 +15,26 @@
             android:title="Overview"/>
         <item
             android:id="@+id/drawer_transmission_id"
-            android:icon="@drawable/transfusion"
+            android:icon="@drawable/biohazard"
             android:title="Transmission"/>
         <item
             android:id="@+id/drawer_symptoms_id"
-            android:icon="@drawable/icon_transportation"
+            android:icon="@drawable/sick"
             android:title="Symptoms"/>
         <item
             android:id="@+id/drawer_effects_id"
-            android:icon="@drawable/icon_requirements"
+            android:icon="@drawable/effects"
             android:title="Effects"/>
         <item android:title="Prevention">
             <menu>
                 <group android:checkableBehavior="single">
                     <item
                         android:id="@+id/drawer_prevention_bites_id"
-                        android:icon="@drawable/icon_successhappy"
+                        android:icon="@drawable/prevent_bite"
                         android:title="Prevent Bites"/>
                     <item
                         android:id="@+id/drawer_prevention_control_id"
-                        android:icon="@drawable/icon_about"
+                        android:icon="@drawable/control_mosquito_net"
                         android:title="Control/Limit Mosquito"/>
                     <item
                         android:id="@+id/drawer_prevention_safesex_id"

@@ -18,7 +18,7 @@
             app:cardCornerRadius="2dp">
 
             <ImageView
-                android:src="@drawable/zika_mosquito"
+                android:src="@drawable/overview"
                 android:id="@+id/effects_image_id"
                 android:layout_width="match_parent"
                 android:layout_height="280dp" />
