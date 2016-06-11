@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.widget.TextView;
 
 import com.example.bezikafree.fragments.EffectsFragment;
+import com.example.bezikafree.fragments.MapFragment;
+import com.example.bezikafree.fragments.NewsFragment;
 import com.example.bezikafree.fragments.OtherFragment;
 import com.example.bezikafree.fragments.OverviewFragment;
 import com.example.bezikafree.fragments.PreventBitesFragment;
@@ -24,6 +26,8 @@ import com.example.bezikafree.fragments.TreatmentDoctorFragment;
 
 public class MainActivity extends AppCompatActivity {
 
+    MapFragment mapFragment;
+    NewsFragment newsFragment;
     OverviewFragment overviewFragment;
     TransmissionFragment transmissionFragment;
     SymptomsFragment symptomsFragment;
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         initializeFragments();
         setUpDrawerContent(navigationView);
         initFragmentManager();
+        openScreen();
     }
 
     private void initFragmentManager(){
@@ -58,7 +63,15 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction = fragmentManager.beginTransaction();
     }
 
+    private void openScreen(){
+        fragmentTransaction.replace(R.id.fragment_container_id,newsFragment);
+        titleTV.setText("Zika News");
+        fragmentTransaction.commit();
+    }
+
     private void initializeFragments(){
+        mapFragment = new MapFragment();
+        newsFragment = new NewsFragment();
         overviewFragment = new OverviewFragment();
         transmissionFragment = new TransmissionFragment();
         symptomsFragment = new SymptomsFragment();
@@ -86,6 +99,14 @@ public class MainActivity extends AppCompatActivity {
         initFragmentManager();
         fragmentTransaction.addToBackStack(null);
         switch (menuItem.getItemId()){
+            case R.id.drawer_map_id:
+                fragmentTransaction.replace(R.id.fragment_container_id, mapFragment);
+                titleTV.setText("Zika Outbreak Map");
+                break;
+            case R.id.drawer_news_id:
+                fragmentTransaction.replace(R.id.fragment_container_id, newsFragment);
+                titleTV.setText("Recent News");
+                break;
             case R.id.drawer_overview_id:
                 fragmentTransaction.replace(R.id.fragment_container_id, overviewFragment);
                 titleTV.setText("Overview");
