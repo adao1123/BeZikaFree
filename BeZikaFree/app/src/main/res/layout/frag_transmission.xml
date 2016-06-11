@@ -71,7 +71,7 @@
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
                     android:textSize="30sp"
-                    android:text="@string/transmissin_mother_title"
+                    android:text="@string/transmission_mother_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
 
