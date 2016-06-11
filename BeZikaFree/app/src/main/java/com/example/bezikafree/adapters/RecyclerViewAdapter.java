@@ -17,11 +17,11 @@ import java.util.ArrayList;
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecyclerViewHolder> {
 
-    private ArrayList<Replace> data;
+    private ArrayList<String> data; // replace String with dataModel
     private Context context;
     private static OnItemClickListener listener;
 
-    public RecyclerViewAdapter(ArrayList<Replace> data) {
+    public RecyclerViewAdapter(ArrayList<String> data) {
         this.data = data;
     }
 

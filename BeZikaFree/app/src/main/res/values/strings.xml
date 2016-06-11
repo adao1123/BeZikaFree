@@ -142,9 +142,9 @@
     <string name="treatment_other_resources_title">Resources</string>
     <string name="treatment_other_resources_text">If you have questions or concerns about the Zika virus, please contact a bilingual (English/Spanish) MotherToBaby expert by calling 1-866-626-6847 or texting questions to 855-999-3525 (standard text messaging rates may apply). You can also chat live or send an email through www.MotherToBaby.org. MotherToBaby is a suggested resource by many agencies including the Centers for Disease Control and Prevention (CDC) and the Food and Drug Administration’s (FDA) Office of Women’s Health. More than 100,000 women and their health care providers seek information about birth defects prevention from MotherToBaby every year.</string>
     <string name="treatment_other_resources_motherToBaby_title">MotherToBaby</string>
+    <string name="title_activity_maps">Map</string>
     <string name="treatment_other_resources_motherToBaby_text">Experts are available to answer questions in English or Spanish by phone, text, or chat. The free and confidential service is available Monday - Friday from 8am - 5pm (local time). To reach MotherToBaby:\n\n
         • Call 1-866-626-6847\n\n
         • Text questions to 855-999-3525 (standard text messaging rates may apply)</string>
-
 
 </resources>
