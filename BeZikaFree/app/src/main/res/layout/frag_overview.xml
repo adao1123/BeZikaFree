@@ -36,9 +36,10 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="blah blah blah"/>
+                android:text="The Zika virus is a mosquito-borne illness, meaning people can get the virus by being bitten by an infected mosquito. Zika virus is related to dengue, yellow fever and West Nile Virus. It was first identified in 1947. In 2013 there were outbreaks of illness from Zika virus in several Pacific islands. More recently, the virus has been reported in many Central and South American countries. Beginning in late 2015, cases of Zika virus have been reported in some U.S. states. These are people who were infected while traveling to these countries.
+"/>
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
-    
+
 </LinearLayout>
