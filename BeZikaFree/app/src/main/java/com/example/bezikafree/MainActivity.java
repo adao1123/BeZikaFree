@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         titleTV = (TextView)findViewById(R.id.title_text_id);
         navigationView = (NavigationView)findViewById(R.id.nvView_id);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(" ");
         setSupportActionBar(toolbar);
 
         initializeFragments();
@@ -69,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
         setActionBarDrawer();
 
 
-        if(savedInstanceState == null) { openScreen(); }
+        if(savedInstanceState == null) {
+            toolbar.setTitle(" ");
+            openScreen(); }
     }
 
     private void initFragmentManager(){
