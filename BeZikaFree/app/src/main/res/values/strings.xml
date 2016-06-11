@@ -51,6 +51,8 @@
     <string name="treatment_cure_symptoms_text">Treatment is limited to relieving the symptoms of Zika virus: reducing fever, headache, joint pain, pink eye, and any other symptoms that might develop.</string>
     <string name="treatment_cure_pregnant_title">How to Treat Pregnant Women with Diagnoses of Zika Virus Disease</string>
     <string name="treatment_cure_pregnant_text">No specific antiviral treatment is available for Zika virus disease. Treatment is generally supportive and can include rest, fluids, and use of analgesics and antipyretics (4). Fever should be treated with acetaminophen (21). Although aspirin and other nonsteroidal anti-inflammatory drugs are not typically used in pregnancy, these medications should specifically be avoided until dengue can be ruled out to reduce the risk for hemorrhage (4,9,17).\n\n In a pregnant woman with laboratory evidence of Zika virus in serum or amniotic fluid, serial ultrasounds should be considered to monitor fetal anatomy and growth every 3–4 weeks. Referral to a maternal-fetal medicine or infectious disease specialist with expertise in pregnancy management is recommended.</string>
+    <string name="treatment_cure_cure_title">Cure</string>
+    <string name="treatment_cure_cure_text">There is no vaccine or cure for the Zika virus. Symptoms are treated as they arise (such as using acetaminophen to treat fever and/or headaches). Prevention is the best approach. That includes using bug repellent (including formulas that contain DEET- http://mothertobaby.org/fact-sheets/deet-nn-ethyl-m-toluamide-pregnancy/), wearing protective clothing, and removing standing water where mosquitoes live. For more information, please visit http://www.cdc.gov/zika/prevention/index.html.</string>
 
 
 </resources>
