@@ -29,14 +29,15 @@
                 android:textColor="@color/colorAccent"
                 android:textAllCaps="true"
                 android:textSize="30sp"
-                android:text="What are the symptoms of Zika?"
+                android:text="@string/symptoms_title"
                 android:layout_marginBottom="@dimen/standard"
                 android:layout_marginTop="@dimen/margin_top"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The Zika virus commonly causes a mild flu-like illness that might include fever, headache, joint and or muscle pain, conjunctivitis (\“pink eye\”) and sometimes a body rash.\n\nMost people infected with Zika virus won\’t have symptoms. For this reason, many people might not realize they have been infected. It is estimated that only one out of five infected people will have symptoms. The most common symptoms of Zika are fever, rash, joint pain, or conjunctivitis (red eyes). Other common symptoms include muscle pain and headache.\n\nThe illness is usually mild. Symptoms begin 3 to 7 days after being infected and can last for several days to a week. People usually don’t get sick enough to go to the hospital, and they very rarely die of Zika.\n\nZika virus usually remains in the blood of an infected person for about a week but it can be found longer in some people. Once a person has been infected, he or she is likely to be protected from future infections.\n\nSee your doctor or other healthcare provider if you are pregnant and develop a fever, rash, joint pain, or red eyes within 2 weeks after traveling to a place where Zika has been reported. Be sure to tell your doctor or other healthcare provider where you traveled."/>
+                android:text="@string/symptoms_text"/>
+
 
         </LinearLayout>
     </android.support.v7.widget.CardView>
