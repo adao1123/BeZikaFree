@@ -6,6 +6,8 @@
 .DS_Store
 /build
 /captures
+<<<<<<< HEAD
 gradle.properties
 /app/src/debug
-.idea
+/.idea
+
