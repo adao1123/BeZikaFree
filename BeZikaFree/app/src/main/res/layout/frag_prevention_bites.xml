@@ -11,6 +11,22 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:elevation="8dp"
+           app:cardCornerRadius="2dp"
+           >
+
+           <ImageView
+               android:src="@drawable/zika_prevention"
+               android:id="@+id/prevention_image_id"
+               android:layout_width="match_parent"
+               android:layout_height="280dp" />
+
+
+       </android.support.v7.widget.CardView>
+
 
         <android.support.v7.widget.CardView
             android:layout_width="match_parent"
