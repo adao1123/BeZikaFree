@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppThemeAppend" parent="AppTheme">
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+    </style>
+
 </resources>
