@@ -35,7 +35,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/treatment_other_resources_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>
@@ -74,7 +74,7 @@
                     android:textStyle="bold"
                     android:textColor="@color/colorAccent"
                     android:textAllCaps="true"
-                    android:textSize="30sp"
+                    android:textSize="@dimen/text_title_top"
                     android:text="@string/treatment_other_resources_motherToBaby_title"
                     android:layout_marginBottom="@dimen/standard"
                     android:layout_marginTop="@dimen/margin_top"/>

@@ -28,7 +28,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/colorAccent"
                 android:textAllCaps="true"
-                android:textSize="30sp"
+                android:textSize="@dimen/text_title_top"
                 android:text="@string/symptoms_title"
                 android:layout_marginBottom="@dimen/standard"
                 android:layout_marginTop="@dimen/margin_top"/>
