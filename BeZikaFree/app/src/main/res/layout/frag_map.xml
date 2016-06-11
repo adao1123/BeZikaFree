@@ -12,5 +12,42 @@
             android:id="@+id/input_fragment_mapView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryAlpha"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#22990000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="0 Incidents"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#77990000"
+                android:text="1-2 Incidents"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#AA990000"
+                android:text="3-6 Incidents"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#FF990000"
+                android:text="7+ Incidents"/>
+        </LinearLayout>
     </FrameLayout>
 </LinearLayout>
