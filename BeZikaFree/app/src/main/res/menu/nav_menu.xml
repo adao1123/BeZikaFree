@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/drawer_map_id"
-            android:icon="@drawable/earth"
-            android:title="Zika US Outbreak Map"/>
-        <item
-            android:id="@+id/drawer_news_id"
-            android:icon="@drawable/newspaper_icon"
-            android:title="Zika Recent News"/>
-        <item
-            android:id="@+id/drawer_overview_id"
-            android:icon="@drawable/icon_application"
-            android:title="Overview"/>
-        <item
-            android:id="@+id/drawer_transmission_id"
-            android:icon="@drawable/biohazard"
-            android:title="Transmission"/>
-        <item
-            android:id="@+id/drawer_symptoms_id"
-            android:icon="@drawable/sick"
-            android:title="Symptoms"/>
-        <item
-            android:id="@+id/drawer_effects_id"
-            android:icon="@drawable/effects"
-            android:title="Effects"/>
+
+    <item android:title="Information">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/drawer_map_id"
+                    android:icon="@drawable/earth"
+                    android:title="Zika US Outbreak Map"/>
+                <item
+                    android:id="@+id/drawer_news_id"
+                    android:icon="@drawable/newspaper_icon"
+                    android:title="Zika Recent News"/>
+                <item
+                    android:id="@+id/drawer_overview_id"
+                    android:icon="@drawable/icon_application"
+                    android:title="Overview"/>
+                <item
+                    android:id="@+id/drawer_transmission_id"
+                    android:icon="@drawable/biohazard"
+                    android:title="Transmission"/>
+                <item
+                    android:id="@+id/drawer_symptoms_id"
+                    android:icon="@drawable/sick"
+                    android:title="Symptoms"/>
+                <item
+                    android:id="@+id/drawer_effects_id"
+                    android:icon="@drawable/effects"
+                    android:title="Effects"/>
+            </group>
+        </menu>
+    </item>
         <item android:title="Prevention">
             <menu>
                 <group android:checkableBehavior="single">
@@ -58,12 +64,13 @@
                         android:id="@+id/drawer_doctor_id"
                         android:icon="@drawable/test_tubes"
                         android:title="Get Tested"/>
+                    <item
+                        android:id="@+id/drawer_other_id"
+                        android:icon="@drawable/icon_resume"
+                        android:title="Contact Info"/>
                 </group>
             </menu>
         </item>
-        <item
-            android:id="@+id/drawer_other_id"
-            android:icon="@drawable/icon_resume"
-            android:title="Contact Info"/>
-    </group>
+
+
 </menu>
