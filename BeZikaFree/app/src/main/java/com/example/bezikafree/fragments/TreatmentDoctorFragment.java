@@ -150,6 +150,11 @@ public class TreatmentDoctorFragment extends android.support.v4.app.Fragment imp
         for(QuestDiagnostics questLab : questArray){
             plotMarkers(questLab);
         }
+
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(new LatLng(fosterCity.getLatitude(), fosterCity.getLongitude())).zoom(10).build();
+        map.animateCamera(CameraUpdateFactory
+                .newCameraPosition(cameraPosition));
     }
 
     public void plotMarkers(QuestDiagnostics questLaboratory){
@@ -167,10 +172,6 @@ public class TreatmentDoctorFragment extends android.support.v4.app.Fragment imp
         marker.icon(BitmapDescriptorFactory
                 .defaultMarker(BitmapDescriptorFactory.HUE_ROSE));
         map.addMarker(marker);
-        CameraPosition cameraPosition = new CameraPosition.Builder()
-                .target(new LatLng(latitude, longitude)).zoom(12).build();
-        map.animateCamera(CameraUpdateFactory
-                .newCameraPosition(cameraPosition));
     }
 
 }
